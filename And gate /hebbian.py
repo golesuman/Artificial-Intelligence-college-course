@@ -13,8 +13,8 @@ print('input is:')
 print (X)
 print('output for And Gate is: ')
 print (Y_ad)
-print('output for Or Gate is: ')
-print (Y_ad)
+# print('output for Or Gate is: ')
+# print (Y_ad)
 weights_ad=np.zeros((3))
 # weights_o=np.zeros((3))
 print( weights_ad)
@@ -58,7 +58,7 @@ def check_learning(X,weights,rand_int):
         Yin=1
     return Yin
 
-
+# print(weights_ad)
 if logicgate=='a' or logicgate=='A':
     weights_in=weights_ad
 
