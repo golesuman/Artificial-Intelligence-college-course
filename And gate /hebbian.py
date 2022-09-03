@@ -48,6 +48,7 @@ logicgate=input()
 print( weights_ad)
 print('selected input is %d '%rand_int)
 print( X[rand_int])
+
 def check_learning(X,weights,rand_int):
     Yin=0
     for i in range(3):
@@ -59,8 +60,11 @@ def check_learning(X,weights,rand_int):
     return Yin
 
 # print(weights_ad)
+# weights_in = 0
 if logicgate=='a' or logicgate=='A':
     weights_in=weights_ad
+
+
 
 Yin=check_learning(X,weights_in,rand_int)
 print (Yin)

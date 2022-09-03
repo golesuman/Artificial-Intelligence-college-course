@@ -68,14 +68,14 @@ def dfs(puzzle, goal, get_moves):
 
 
 if __name__ == '__main__':
-    reps = 25
-    print('Average solution times: ')
+    reps = 10
     # Depth first search
     total_time = 0
     for i in range(reps):
         puzzle, goal = num_matrix(3, 3)
         t0 = time.time()
         solution = dfs(puzzle, goal, num_moves(3, 3))
+        print(solution)
         t1 = time.time()
         total_time += t1 - t0
     total_time /= reps

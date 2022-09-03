@@ -69,8 +69,8 @@ def bfs(puzzle, goal, get_moves):
                 queue.append(new_path)
 
 if __name__ == '__main__':
-    reps = 25
-    print('Average solution times: ')
+    reps = 10
+   
 
     
     # Breadth first search
@@ -79,6 +79,7 @@ if __name__ == '__main__':
         puzzle, goal = num_matrix(3, 3)
         t0 = time.time()
         solution = bfs(puzzle, goal, num_moves(3, 3))
+        print(solution)
         t1 = time.time()
         total_time += t1 - t0
     total_time /= reps
