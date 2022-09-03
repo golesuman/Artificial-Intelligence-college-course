@@ -16,7 +16,7 @@ def perceptronModel(x, w, b):
 
 # AND Logic Function
 # w1 = 1, w2 = 1, b = -1.5
-def AND_logicFunction(x):
+def LogicFunction(x):
 	w = np.array([1, 1])
 	b = -1.5
 	return perceptronModel(x, w, b)
@@ -28,7 +28,7 @@ test3 = np.array([0, 0])
 test4 = np.array([1, 0])
 
 
-print(f"And {0}, {1} = {AND_logicFunction(test1)} ")
-print(f"And {1}, {1} = {AND_logicFunction(test2)}")
-print(f"AND {0}, {0} = {AND_logicFunction(test3)}")
-print(f"AND {1}, {0} = {AND_logicFunction(test4)}")
+print(f"AND {0}, {1} = {LogicFunction(test1)} ")
+print(f"AND {1}, {1} = {LogicFunction(test2)}")
+print(f"AND {0}, {0} = {LogicFunction(test3)}")
+print(f"AND {1}, {0} = {LogicFunction(test4)}")
